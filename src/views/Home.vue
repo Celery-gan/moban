@@ -1,18 +1,17 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <backtop>  <!-- 将页面内容包括到backtop中 中间内容就会触发效果 -->
+      home
+    </backtop>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import backtop from '../components/Backtop' //引入子组件 返回顶部
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    
   }
 }
 </script>
